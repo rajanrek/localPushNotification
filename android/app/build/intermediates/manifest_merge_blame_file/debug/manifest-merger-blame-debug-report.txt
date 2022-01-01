@@ -1,0 +1,362 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pushnotify"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/rajan/Documents/pushNotify/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/home/rajan/Documents/pushNotify/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:4:2-65
+12-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:4:19-62
+13
+14    <permission
+15        android:name="com.pushnotify.permission.C2D_MESSAGE"
+16        android:protectionLevel="signature" />
+17
+18    <uses-permission android:name="com.pushnotify.permission.C2D_MESSAGE" />
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:9:5-66
+19-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:9:22-63
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:10:5-80
+20-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:10:22-78
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[com.facebook.flipper:flipper:0.75.1] /home/rajan/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:15:5-67
+21-->[com.facebook.flipper:flipper:0.75.1] /home/rajan/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:15:22-64
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[com.facebook.flipper:flipper:0.75.1] /home/rajan/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
+22-->[com.facebook.flipper:flipper:0.75.1] /home/rajan/.gradle/caches/transforms-2/files-2.1/a8f6015f96666ab8d93bfe5b64998bc8/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+23-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:22:5-79
+23-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:22:22-76
+24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+24-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:25:5-82
+24-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:25:22-79
+25    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+26    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+27    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+28    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+29    <!-- for Samsung -->
+30    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+30-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+30-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+31    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+31-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+31-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+32    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+32-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+32-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+33    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+33-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+33-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+34    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+34-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+34-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+35    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+35-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+35-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+36    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+36-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+36-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+37    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+37-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+37-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+38    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+38-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+38-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+39    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+39-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+40    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+40-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+40-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+41    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+41-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+41-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+42    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+42-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+42-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+43    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+43-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+43-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+44    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+44-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+44-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+45    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+45-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+45-->[me.leolin:ShortcutBadger:1.1.22] /home/rajan/.gradle/caches/transforms-2/files-2.1/091dc4e4cdcc7b8ff4528057aeb8408e/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+46
+47    <application
+47-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:11:5-79:19
+48        android:name="com.pushnotify.MainApplication"
+48-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:12:7-38
+49        android:allowBackup="false"
+49-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:16:7-34
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/d67cd79abd1ca209502f51c69d23182b/core-1.1.0/AndroidManifest.xml:24:18-86
+51        android:debuggable="true"
+52        android:icon="@mipmap/ic_launcher"
+52-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:14:7-41
+53        android:label="@string/app_name"
+53-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:13:7-39
+54        android:roundIcon="@mipmap/ic_launcher_round"
+54-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:15:7-52
+55        android:theme="@style/AppTheme"
+55-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:17:7-38
+56        android:usesCleartextTraffic="true" >
+56-->/home/rajan/Documents/pushNotify/android/app/src/debug/AndroidManifest.xml:8:9-44
+57        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+57-->/home/rajan/Documents/pushNotify/android/app/src/debug/AndroidManifest.xml:11:9-86
+57-->/home/rajan/Documents/pushNotify/android/app/src/debug/AndroidManifest.xml:11:19-83
+58
+59        <meta-data
+59-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:18:13-19:65
+60            android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+60-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:18:25-103
+61            android:value="YOUR NOTIFICATION CHANNEL NAME" />
+61-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:19:17-63
+62        <meta-data
+62-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:20:5-21:72
+63            android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+63-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:20:17-102
+64            android:value="YOUR NOTIFICATION CHANNEL DESCRIPTION" /> <!-- Change the resource name to your App's accent color - or any other color you want -->
+64-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:21:17-70
+65        <meta-data
+65-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:23:5-24:58
+66            android:name="com.dieam.reactnativepushnotification.notification_color"
+66-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:23:17-88
+67            android:resource="@android:color/white" /> <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+67-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:24:17-56
+68        <receiver
+68-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:27:5-34:16
+69            android:name="com.google.android.gms.gcm.GcmReceiver"
+69-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:27:17-70
+70            android:exported="true"
+70-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:28:17-40
+71            android:permission="com.google.android.c2dm.permission.SEND" >
+71-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:29:17-77
+72            <intent-filter>
+72-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:30:13-33:29
+73                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+73-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:13-77
+73-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:21-74
+74
+75                <category android:name="com.pushnotify" />
+76            </intent-filter>
+77        </receiver> <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+78        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher" />
+78-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:37:5-106
+78-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:37:15-103
+79        <receiver android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver" >
+79-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:38:5-42:16
+79-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:38:15-111
+80            <intent-filter>
+80-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:39:13-41:29
+81                <action android:name="android.intent.action.BOOT_COMPLETED" />
+81-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:40:18-80
+81-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:40:26-77
+82            </intent-filter>
+83        </receiver>
+84
+85        <service android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService" /> <!-- < Only if you're using GCM or localNotificationSchedule() > -->
+85-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:43:5-114
+85-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:43:14-112
+86        <service
+86-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:46:5-52:15
+87            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm"
+87-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:47:14-111
+88            android:exported="false" >
+88-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:48:14-38
+89            <intent-filter>
+89-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:49:13-51:25
+90                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+90-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:13-77
+90-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:21-74
+91            </intent-filter>
+92        </service> <!-- </ Only if you're using GCM or localNotificationSchedule() > -->
+93        <service
+93-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:54:3-60:15
+94            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+94-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:55:9-103
+95            android:exported="false" >
+95-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:56:9-33
+96            <intent-filter>
+96-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:57:9-59:25
+97                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+97-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:17-78
+97-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:25-75
+98            </intent-filter>
+99        </service>
+100        <service
+100-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:54:3-60:15
+101            android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+101-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:55:9-103
+102            android:exported="false" >
+102-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:56:9-33
+103            <intent-filter>
+103-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:57:9-59:25
+104                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+104-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:17-78
+104-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:25-75
+105            </intent-filter>
+106        </service>
+107
+108        <activity
+108-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:68:7-78:18
+109            android:name="com.pushnotify.MainActivity"
+109-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:69:9-37
+110            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+110-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:71:9-86
+111            android:label="@string/app_name"
+111-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:70:9-41
+112            android:launchMode="singleTask"
+112-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:72:9-40
+113            android:windowSoftInputMode="adjustResize" >
+113-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:73:9-51
+114            <intent-filter>
+114-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:74:9-77:25
+115                <action android:name="android.intent.action.MAIN" />
+115-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:75:13-65
+115-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:75:21-62
+116
+117                <category android:name="android.intent.category.LAUNCHER" />
+117-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:76:13-73
+117-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:76:23-70
+118            </intent-filter>
+119        </activity>
+120
+121        <receiver
+121-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
+122            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+122-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:29:13-78
+123            android:exported="true"
+123-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:30:13-36
+124            android:permission="com.google.android.c2dm.permission.SEND" >
+124-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:31:13-73
+125            <intent-filter>
+125-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:49:13-51:25
+126                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+126-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:13-77
+126-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:31:21-74
+127            </intent-filter>
+128        </receiver>
+129        <!--
+130             FirebaseMessagingService performs security checks at runtime,
+131             but set to not exported to explicitly avoid allowing another app to call it.
+132        -->
+133        <service
+133-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:41:9-48:19
+134            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+134-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:42:13-82
+135            android:directBootAware="true"
+135-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:43:13-43
+136            android:exported="false" >
+136-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:44:13-37
+137            <intent-filter android:priority="-500" >
+137-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:57:9-59:25
+138                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+138-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:17-78
+138-->/home/rajan/Documents/pushNotify/android/app/src/main/AndroidManifest.xml:58:25-75
+139            </intent-filter>
+140        </service>
+141        <service
+141-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:49:9-55:19
+142            android:name="com.google.firebase.components.ComponentDiscoveryService"
+142-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:50:13-84
+143            android:directBootAware="true"
+143-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+144            android:exported="false" >
+144-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:51:13-37
+145            <meta-data
+145-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:52:13-54:85
+146                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+146-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:53:17-119
+147                android:value="com.google.firebase.components.ComponentRegistrar" />
+147-->[com.google.firebase:firebase-messaging:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/97391023d423dfab844a059219e387e5/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:54:17-82
+148            <meta-data
+148-->[com.google.firebase:firebase-datatransport:17.0.10] /home/rajan/.gradle/caches/transforms-2/files-2.1/2415db7c64094eae85bbfd810306056f/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+149                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+149-->[com.google.firebase:firebase-datatransport:17.0.10] /home/rajan/.gradle/caches/transforms-2/files-2.1/2415db7c64094eae85bbfd810306056f/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+150                android:value="com.google.firebase.components.ComponentRegistrar" />
+150-->[com.google.firebase:firebase-datatransport:17.0.10] /home/rajan/.gradle/caches/transforms-2/files-2.1/2415db7c64094eae85bbfd810306056f/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+151            <meta-data
+151-->[com.google.firebase:firebase-iid:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/bed90ec7baaab2fe89f909d1ed7af931/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+152                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+152-->[com.google.firebase:firebase-iid:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/bed90ec7baaab2fe89f909d1ed7af931/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.firebase:firebase-iid:21.1.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/bed90ec7baaab2fe89f909d1ed7af931/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-installations:16.3.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/28c26e2d6c114e8a9ce6e2536c2824fe/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+155                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+155-->[com.google.firebase:firebase-installations:16.3.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/28c26e2d6c114e8a9ce6e2536c2824fe/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-installations:16.3.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/28c26e2d6c114e8a9ce6e2536c2824fe/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+157            <!--
+158                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+159                clients to use it as well, by defining this registrar in their own core/common library.
+160            -->
+161            <meta-data
+161-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+162                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+162-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+164        </service>
+165        <service
+165-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+166            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+166-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+167            android:exported="false" >
+167-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+168            <meta-data
+168-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+169                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+169-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+170                android:value="cct" />
+170-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/rajan/.gradle/caches/transforms-2/files-2.1/06cbf82235ff7888b1bd00b365b37ed7/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+171        </service>
+172        <service
+172-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+173            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+173-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+174            android:exported="false"
+174-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+175            android:permission="android.permission.BIND_JOB_SERVICE" >
+175-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+176        </service>
+177
+178        <receiver
+178-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+179            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+179-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+180            android:exported="false" />
+180-->[com.google.android.datatransport:transport-runtime:2.2.5] /home/rajan/.gradle/caches/transforms-2/files-2.1/372f8fd416462138ce53125cbaf51572/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+181
+182        <provider
+182-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+183            android:name="com.google.firebase.provider.FirebaseInitProvider"
+183-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+184            android:authorities="com.pushnotify.firebaseinitprovider"
+184-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+185            android:directBootAware="true"
+185-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+186            android:exported="false"
+186-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+187            android:initOrder="100" />
+187-->[com.google.firebase:firebase-common:19.5.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/9b258e193410108b7e93b8ca3356a6a1/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+188
+189        <meta-data
+189-->[com.google.android.gms:play-services-basement:17.0.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/dcffa74d8d015470a7eae32b9eb648c7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+190            android:name="com.google.android.gms.version"
+190-->[com.google.android.gms:play-services-basement:17.0.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/dcffa74d8d015470a7eae32b9eb648c7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+191            android:value="@integer/google_play_services_version" />
+191-->[com.google.android.gms:play-services-basement:17.0.0] /home/rajan/.gradle/caches/transforms-2/files-2.1/dcffa74d8d015470a7eae32b9eb648c7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+192    </application>
+193
+194</manifest>
